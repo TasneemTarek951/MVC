@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Desiggn_Paterns_1</string>
+    <string name="Title">Title</string>
+    <string name="Price">Price</string>
+    <string name="Brand">Brand</string>
+    <string name="Descript">Descript</string>
+    <string name="Rating">Rating</string>
+    <string name="Add">Add to favorite</string>
+    <string name="Remove">Remove from favorite</string>
+    <string name="Getproducts">Get All Products</string>
+    <string name="GetFavorite">Get Favorite Products</string>
+    <string name="Exit">Exit</string>
+</resources>

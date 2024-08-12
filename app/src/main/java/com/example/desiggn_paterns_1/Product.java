@@ -26,7 +26,7 @@ public class Product {
     private String thumbnailUrl;
 
 
-
+    public Product(){}
     public Product(String title, String price, String brand, String desc, double rate, String url){
         _title = title;
         _price = price;
@@ -36,46 +36,52 @@ public class Product {
         thumbnailUrl = url;
     }
 
-    public void SetTitle(String title){
-        _title = title;
-    }
-
-    public void SetPrice(String price){
-        _price = price;
-    }
-    public void SetBrand(String brand){
-        _brand = brand;
-    }
-    public void SetDesc(String desc){
-        _desc = desc;
-    }
-    public void SetRate(double rate){
-        _rate = rate;
-    }
-    public void SetUrl(String url){
-        thumbnailUrl = url;
-    }
-
-    public String getTitle(){
+    @NonNull
+    public String get_title() {
         return _title;
     }
 
-    public String getPrice(){
+    public void set_title(@NonNull String _title) {
+        this._title = _title;
+    }
+
+    public String get_price() {
         return _price;
     }
 
-    public String getBrand(){
+    public void set_price(String _price) {
+        this._price = _price;
+    }
+
+    public String get_brand() {
         return _brand;
     }
 
-    public String getDesc(){
+    public void set_brand(String _brand) {
+        this._brand = _brand;
+    }
+
+    public String get_desc() {
         return _desc;
     }
-    public double getRate(){
+
+    public void set_desc(String _desc) {
+        this._desc = _desc;
+    }
+
+    public double get_rate() {
         return _rate;
     }
-    public String getUrl(){
+
+    public void set_rate(double _rate) {
+        this._rate = _rate;
+    }
+
+    public String getThumbnailUrl() {
         return thumbnailUrl;
     }
 
+    public void setThumbnailUrl(String thumbnailUrl) {
+        this.thumbnailUrl = thumbnailUrl;
+    }
 }

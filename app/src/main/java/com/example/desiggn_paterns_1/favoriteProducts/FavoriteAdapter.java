@@ -49,13 +49,13 @@ public class FavoriteAdapter extends RecyclerView.Adapter<FavoriteAdapter.ViewHo
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Product product = products.get(position);
-        holder.title_text.setText(product.getTitle());
-        holder.price_text.setText(product.getPrice());
-        holder.brand_text.setText(product.getBrand());
-        holder.desc_text.setText(product.getDesc());
-        holder.rat.setRating((float) product.getRate());
+        holder.title_text.setText(product.get_title());
+        holder.price_text.setText(product.get_price());
+        holder.brand_text.setText(product.get_brand());
+        holder.desc_text.setText(product.get_desc());
+        holder.rat.setRating((float) product.get_rate());
 
-        Glide.with(context).load(product.getUrl()).apply(new RequestOptions().override(150,150).placeholder(R.drawable.ic_launcher_background).error(R.drawable.ic_launcher_background)).into(holder.pro_img);
+        Glide.with(context).load(product.getThumbnailUrl()).apply(new RequestOptions().override(150,150).placeholder(R.drawable.ic_launcher_background).error(R.drawable.ic_launcher_background)).into(holder.pro_img);
 
         holder.remove_btn.setOnClickListener(new View.OnClickListener() {
             @Override

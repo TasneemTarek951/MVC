@@ -84,6 +84,7 @@ public class AllproductAdaoter extends RecyclerView.Adapter<AllproductAdaoter.Vi
             desc_text = itemView.findViewById(R.id.Descript_value);
             pro_img = itemView.findViewById(R.id.product_imag);
             rat = itemView.findViewById(R.id.ratingBar_value);
+            rat.setActivated(false);
             add_btn = itemView.findViewById(R.id.Addbtn);
         }
     }

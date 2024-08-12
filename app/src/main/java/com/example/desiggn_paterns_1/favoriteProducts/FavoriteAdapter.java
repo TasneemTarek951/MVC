@@ -88,6 +88,7 @@ public class FavoriteAdapter extends RecyclerView.Adapter<FavoriteAdapter.ViewHo
             desc_text = itemView.findViewById(R.id.desc_value);
             pro_img = itemView.findViewById(R.id.pro_imag);
             rat = itemView.findViewById(R.id.rating_value);
+            rat.setActivated(false);
             remove_btn = itemView.findViewById(R.id.remove_btn);
         }
     }

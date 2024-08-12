@@ -33,7 +33,6 @@ public class AllproductAdaoter extends RecyclerView.Adapter<AllproductAdaoter.Vi
 
     public void SetList(List<Product> productList){
         products = productList;
-        notifyDataSetChanged();
     }
     @NonNull
     @Override

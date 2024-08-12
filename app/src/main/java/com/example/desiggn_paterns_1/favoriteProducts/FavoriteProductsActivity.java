@@ -21,13 +21,16 @@ public class FavoriteProductsActivity extends AppCompatActivity implements onfav
     RecyclerView recycl;
     FavoriteAdapter adapter;
     RecyclerView.LayoutManager layoutManager;
-    Repository repo = new Repository(this);
+    Repository repo;
     List<Product> products = new ArrayList<Product>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_favorite_products);
+
+        repo = new Repository(this);
+
         recycl = findViewById(R.id.recycler);
 
         adapter = new FavoriteAdapter(this,new ArrayList<Product>(),this);
